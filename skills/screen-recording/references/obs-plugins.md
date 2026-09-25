@@ -2,6 +2,13 @@
 
 Run `bash scripts/check.sh` to see which are installed. Missing ones install with `yay -S --needed <pkg>`; after an OBS update, rebuild AUR plugins with `yay -S <pkg> --rebuild` if one stops loading.
 
+**Build fails with `is deprecated [-Werror=deprecated-declarations]`** (e.g. obs-move-transition on OBS 32.2): the plugin treats warnings as errors and OBS deprecated an API it uses. Build it with warnings allowed:
+```bash
+git clone https://aur.archlinux.org/<pkg>.git && cd <pkg>
+sed -i 's|  -Wno-dev|  -DCMAKE_COMPILE_WARNING_AS_ERROR=OFF \\\n  -Wno-dev|' PKGBUILD
+makepkg -si
+```
+
 | Package | Where in OBS | Use it for |
 |---|---|---|
 | obs-move-transition | Transition *Move*; filters *Move Source / Move Value* | Animated zooms/pans, sliding webcams, smooth scene changes |
