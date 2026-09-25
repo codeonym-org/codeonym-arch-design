@@ -1,6 +1,6 @@
 {
   "name": "codeonym-arch-design",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Design skills for codeonym's Arch Linux workstation (GNOME/Wayland, AMD Vega): graphic design, illustration, photo editing, UI design, typography, print layout, 3D modeling with Blender, video editing and screen recording. Each skill knows which tools are installed, has scripts that check them, and has guides for building designs with them.",
   "author": {
     "name": "codeonym",
