@@ -17,10 +17,12 @@ Claude Code skills for a design workstation on Arch Linux (GNOME Wayland, AMD Ve
 
 ## Install
 ```bash
-claude plugin marketplace add ~/workstation/codeonym-arch-design
+claude plugin marketplace add codeonym-oss/codeonym-arch-design
 claude plugin install codeonym-arch-design@codeonym
 ```
-After editing skills, run `claude plugin marketplace update codeonym` and reinstall/restart to pick up changes.
+Or from a local clone: `claude plugin marketplace add ./codeonym-arch-design`. After changing skills, bump `version` in `.claude-plugin/plugin.json`, then `claude plugin marketplace update codeonym` and `claude plugin update codeonym-arch-design@codeonym`.
+
+The skills are written for one specific machine (Arch Linux, GNOME Wayland, AMD Vega iGPU), but the scripts only rely on standard Arch packages — `design-doctor` tells you what's missing on yours.
 
 ## Layout
 ```

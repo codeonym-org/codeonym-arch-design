@@ -34,4 +34,3 @@ It runs every skill's `check.sh`, lists anything missing with ready-to-paste `pa
 ## Known machine facts
 - GNOME 50 on Wayland; AMD Radeon Vega 8 iGPU (VAAPI H.264/HEVC encode; no Cycles GPU); 8 CPU threads.
 - Homebrew is loaded in `~/.zshrc` and shadows `ffmpeg`, `ffprobe`, `perl`, `python3`, `cwebp`. All skill scripts source `lib/env.sh` to put `/usr/bin` first. `doctor.sh` prints a one-line `~/.zshrc` fix for your whole shell.
-- Home partition was ~94 % full when this toolkit was set up — keep an eye on it for video work.
