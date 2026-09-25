@@ -1,0 +1,17 @@
+{
+  "name": "codeonym",
+  "owner": {
+    "name": "codeonym",
+    "url": "https://github.com/codeonym"
+  },
+  "description": "codeonym's Claude Code plugins.",
+  "plugins": [
+    {
+      "name": "codeonym-arch-design",
+      "source": "./",
+      "description": "Design skills for an Arch Linux workstation: graphic design, illustration, photo, UI, typography, print, Blender 3D, video editing and screen recording.",
+      "category": "design",
+      "keywords": ["design", "arch-linux", "blender", "gimp", "inkscape", "obs"]
+    }
+  ]
+}
