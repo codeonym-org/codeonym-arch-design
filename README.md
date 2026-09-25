@@ -1,6 +1,10 @@
 # codeonym-arch-design
 
-Claude Code skills for a design workstation on Arch Linux (GNOME Wayland, AMD Vega). Each skill knows the tools installed on the machine, has scripts that check them, and has step-by-step guides for building designs with them.
+My personal Claude Code skills for my design workstation: Arch Linux, GNOME 50 on Wayland, AMD Radeon Vega 8 iGPU. Each skill knows the tools installed on this machine, has scripts that check them, and has step-by-step guides for the way I build designs, videos and 3D work with them.
+
+This is part of my own setup, not a general-purpose toolkit. The versions, quirks (Homebrew shadowing system tools, CPU-only Cycles, VAAPI H.264/HEVC only), OBS layout and hotkeys are specific to my machine. It's public so it's easy to install and reference, and you're welcome to read or fork it, but expect to adapt it.
+
+## Skills
 
 | Skill | Covers |
 |---|---|
@@ -13,16 +17,21 @@ Claude Code skills for a design workstation on Arch Linux (GNOME Wayland, AMD Ve
 | `codeonym-arch-design:print-layout` | Scribus 1.6, bleed/CMYK, PDF preflight, compression, proofs |
 | `codeonym-arch-design:3d-modeling` | Blender 5.2: mockups, turntables, headless renders, format conversion |
 | `codeonym-arch-design:video-editing` | Kdenlive, melt, ffmpeg with VAAPI, loudness, GIFs, platform presets |
-| `codeonym-arch-design:screen-recording` | OBS 32 + plugins, showmethekey, OpenScreen, presenter mode |
+| `codeonym-arch-design:screen-recording` | OBS 32 + plugins, showmethekey, OpenScreen, presenter mode, my "Pro Studio" OBS setup |
 
 ## Install
 ```bash
-claude plugin marketplace add codeonym-oss/codeonym-arch-design
+claude plugin marketplace add codeonym-org/codeonym-arch-design
 claude plugin install codeonym-arch-design@codeonym
 ```
-Or from a local clone: `claude plugin marketplace add ./codeonym-arch-design`. After changing skills, bump `version` in `.claude-plugin/plugin.json`, then `claude plugin marketplace update codeonym` and `claude plugin update codeonym-arch-design@codeonym`.
 
-The skills are written for one specific machine (Arch Linux, GNOME Wayland, AMD Vega iGPU), but the scripts only rely on standard Arch packages — `design-doctor` tells you what's missing on yours.
+## Updating
+Edit in my working copy (`~/workstation/codeonym-arch-design`), bump `version` in `.claude-plugin/plugin.json`, commit and push, then:
+```bash
+claude plugin marketplace update codeonym
+claude plugin update codeonym-arch-design@codeonym
+```
+Restart Claude Code to load the new version.
 
 ## Layout
 ```

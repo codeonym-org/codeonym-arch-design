@@ -1,13 +1,13 @@
 {
   "name": "codeonym-arch-design",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Design skills for codeonym's Arch Linux workstation (GNOME/Wayland, AMD Vega): graphic design, illustration, photo editing, UI design, typography, print layout, 3D modeling with Blender, video editing and screen recording. Each skill knows which tools are installed, has scripts that check them, and has guides for building designs with them.",
   "author": {
     "name": "codeonym",
     "url": "https://github.com/codeonym"
   },
-  "homepage": "https://github.com/codeonym-oss/codeonym-arch-design",
-  "repository": "https://github.com/codeonym-oss/codeonym-arch-design",
+  "homepage": "https://github.com/codeonym-org/codeonym-arch-design",
+  "repository": "https://github.com/codeonym-org/codeonym-arch-design",
   "license": "MIT",
   "keywords": ["design", "arch-linux", "gimp", "inkscape", "krita", "blender", "obs", "kdenlive", "ffmpeg", "scribus", "darktable"],
   "skills": [
